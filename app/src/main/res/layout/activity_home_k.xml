@@ -11,11 +11,14 @@
             android:id="@+id/night_scene"
     />
 
-    <ImageView android:layout_width="wrap_content"
+
+    <ImageView
+            android:id="@+id/spark"
+            android:layout_width="wrap_content"
                android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
                android:src="@drawable/ic_fireworks"
-               android:onClick="spark"
+
                android:layout_margin="16dp"
     />
 </FrameLayout>

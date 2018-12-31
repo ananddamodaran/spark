@@ -5,6 +5,7 @@ import android.view.SurfaceHolder
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.viginfotech.spark.engine.NightScene
+import kotlinx.android.synthetic.main.activity_home_k.*
 
 class HomeActivityK : AppCompatActivity() {
 
@@ -29,6 +30,10 @@ class HomeActivityK : AppCompatActivity() {
                 nightScene.stop()
             }
         })
+
+        spark.setOnClickListener{
+            nightScene.randomFire()
+        }
 
     }
 
@@ -55,8 +60,8 @@ class HomeActivityK : AppCompatActivity() {
         }
 
     }
-    fun spark(view:View){
-        nightScene.randomFire()
-    }
+
+
+
 
 }

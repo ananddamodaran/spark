@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "119202158123",
+    "firebase_url": "https://anand-2019.firebaseio.com",
+    "project_id": "anand-2019",
+    "storage_bucket": "anand-2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119202158123:android:987496afd3c0a18d",
+        "android_client_info": {
+          "package_name": "com.viginfotech.spark.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119202158123-mn1bl35kv87tf00vl98s8qku8get52la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4yl1eNLZmf4CfsIy6RT9pO0bvjO6p5xk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
