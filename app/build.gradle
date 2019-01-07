@@ -13,13 +13,14 @@ android {
         applicationId "com.viginfotech.spark"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 1
+        versionCode 3
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug{
@@ -46,6 +47,7 @@ dependencies {
     //firebase
     implementation 'com.google.firebase:firebase-core:16.0.6'
     implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
 
 }
 apply plugin: 'com.google.gms.google-services'
