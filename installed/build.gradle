@@ -11,7 +11,7 @@ android {
         //applicationId "com.viginfotech.spark.installed"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 6
+        versionCode 7
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -20,7 +20,8 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
