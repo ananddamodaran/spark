@@ -8,6 +8,10 @@ buildscript {
         targetSdkVersion = 28
         supportLibraryVersion = '1.0.2'
         constraintLayoutVersion = '2.0.0-alpha3'
+        firebaseCore = '16.0.6'
+        crashlytics = '2.9.8'
+        firebaseMessaging = '17.3.4'
+        timber = '4.7.1'
 
     }
 
@@ -21,7 +25,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.3.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.google.gms:google-services:4.2.0'
         classpath 'io.fabric.tools:gradle:1.26.1'

@@ -2,7 +2,6 @@ package com.viginfotech.spark
 
 import android.os.Bundle
 import android.view.SurfaceHolder
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.viginfotech.spark.engine.NightScene
 import kotlinx.android.synthetic.main.activity_home_k.*

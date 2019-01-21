@@ -45,11 +45,18 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
 
     //firebase
-    implementation 'com.google.firebase:firebase-core:16.0.6'
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
-    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation "com.google.firebase:firebase-core:$rootProject.firebaseCore"
+    implementation "com.crashlytics.sdk.android:crashlytics:$rootProject.crashlytics"
+    implementation "com.google.firebase:firebase-messaging:$rootProject.firebaseMessaging"
 
-    implementation 'com.jakewharton.timber:timber:4.7.1'
+    debugImplementation "com.jakewharton.timber:timber:$rootProject.timber"
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+
+    //todo
+    //https://github.com/vsvankhede/easyfonts
+    //https://github.com/daimajia/AndroidViewAnimations
+    //https://github.com/chrisjenx/Calligraphy
 
 
 }
