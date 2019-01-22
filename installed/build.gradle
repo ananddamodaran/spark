@@ -11,7 +11,7 @@ android {
         //applicationId "com.viginfotech.spark.installed"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 9
+        versionCode 1009
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
