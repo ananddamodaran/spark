@@ -27,8 +27,8 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
                         android:scheme="http"
-                        android:host="fireworks.page.link"
-                        android:pathPattern="/install"/>
+                        android:host="anand-2019.firebaseapp.com"
+                        android:pathPattern="/try"/>
             </intent-filter>
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW"/>
@@ -36,11 +36,11 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
                         android:scheme="https"
-                        android:host="fireworks.page.link"
-                        android:pathPattern="/install"/>
+                        android:host="anand-2019.firebaseapp.com"
+                        android:pathPattern="/try"/>
             </intent-filter>
             <meta-data android:name="default-url"
-                       android:value="https://fireworks.page.link/install" />
+                       android:value="https://anand-2019.firebaseapp.com/try" />
         </activity>
 
         <service android:name="com.viginfotech.spark.firebase.FCMNotification">
