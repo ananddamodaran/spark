@@ -1,19 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-
-
+    compileSdkVersion rootProject.compileSdkVersion
 
     defaultConfig {
         applicationId "com.viginfotech.spark"
 
         //applicationId "com.viginfotech.spark.installed"
-        minSdkVersion 21
-        targetSdkVersion 28
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
         versionCode 1009
-        versionName "1.0"
-
+        versionName rootProject.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
