@@ -3,15 +3,33 @@ package com.viginfotech.spark
 import android.os.Bundle
 import android.view.SurfaceHolder
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.instantapps.InstantApps
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.viginfotech.spark.base.R
 import com.viginfotech.spark.engine.NightScene
 import kotlinx.android.synthetic.main.activity_home_k.*
 
 class HomeActivityK : AppCompatActivity() {
 
+    private lateinit var mFirebaseAnalytics: FirebaseAnalytics
+
+    private var status: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_k)
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+
+        // Determine the current app context, either installed or instant, then
+        // set the corresponding user property for Google Analytics.
+        status = if (InstantApps.isInstantApp(this)) {
+            getString(R.string.status_instant)
+        } else {
+            getString(R.string.status_installed)
+        }
+        mFirebaseAnalytics.setUserProperty(getString(R.string.analytics_user_prop),
+            status)
+
         nightScene = findViewById(R.id.night_scene)
         mSurfaceHolder = nightScene.holder
         mSurfaceHolder.addCallback(object : SurfaceHolder.Callback {

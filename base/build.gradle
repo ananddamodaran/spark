@@ -10,10 +10,10 @@ def keystorePropertiesFile = rootProject.file("keystore.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
-    compileSdkVersion rootProject.compileSdkVersion
+    compileSdkVersion rootProject.compileSdk
     defaultConfig {
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion 28
+        minSdkVersion rootProject.minSdk
+        targetSdkVersion rootProject.targetSdk
         versionCode 109
         versionName rootProject.versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -64,6 +64,9 @@ dependencies {
     implementation "com.google.firebase:firebase-dynamic-links:$rootProject.firebaseDynamicLinks"
     implementation "com.google.firebase:firebase-messaging:$rootProject.firebaseMessaging"
     // implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+
+
+    implementation "com.google.android.instantapps:instantapps:$rootProject.instantApps"
 
 
 }
