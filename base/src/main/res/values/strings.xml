@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Spark</string>
+    <string name="make_some_noise">Make some noise :D</string>
+    <string name="open_audio_hint">Open the audio for the best show :-)</string>
+    <string name="status_instant">instant</string>
+    <string name="status_installed">installed</string>
+    <string name="analytics_user_prop">app_type</string>
+
+</resources>
